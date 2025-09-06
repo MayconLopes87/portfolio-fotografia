@@ -1,0 +1,136 @@
+/* Barra de navegação fixa no topo */
+header {
+  background-color: #222;
+  padding: 25px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  font-size: 10px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e53935; /* Vermelho ao passar o mouse */
+}
+
+
+.eventos {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.eventos h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.eventos .subtitulo {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.lista-eventos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.lista-eventos li {
+  width: 100%;
+  max-width: 500px;
+}
+
+.lista-eventos a {
+  display: block;
+  padding: 15px 20px;
+  background-color: #e53935;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.lista-eventos a:hover {
+  background-color: #b71c1c;
+}
+
+.evento-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px 20;
+  padding: 60px 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.foto-esquerda,
+.foto-direita {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-evento {
+  flex: 1;
+  text-align: center;
+}
+
+.conteudo-evento h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.conteudo-evento a {
+  display: block;
+  background-color: #e53935;
+  color: white;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  max-width: 500px;
+  transition: background 0.3s ease;
+}
+
+.conteudo-evento a:hover {
+  background-color: #c62828;
+}
